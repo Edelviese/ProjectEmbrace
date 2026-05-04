@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Embraaace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== LANDING PAGE ===== -->
+  <div id="page-landing" class="page active">
+    <div class="landing-characters left">
+      <!-- Replace with your illustration image -->
+      <img src="assets/Lifesavers Sitting.png" alt="Character sitting" class="character-img" />
+    </div>
+
+    <div class="landing-card">
+      <!-- Replace with your logo image -->
+      <img src="assets/EMBRACE Logo - Big.png" alt="Embraaace" class="logo-large" />
+
+      <p class="landing-desc">
+        Your site-version of the personal jar for your every mood. Because every feeling deserves to be felt, and you deserve all best.
+      </p>
+
+      <button class="btn-primary" onclick="goTo('page-selection')">Get Started</button>
+    </div>
+
+    <div class="landing-characters right">
+      <!-- Replace with your illustration image -->
+      <img src="assets/Lifesavers Standing.png" alt="Character standing" class="character-img" />
+    </div>
+  </div>
+
+  <!-- ===== SELECTION PAGE ===== -->
+  <div id="page-selection" class="page">
+    <header class="top-bar">
+      <!-- Replace with your logo image -->
+       <a href="index.html">
+        <img src="assets/EMBRACE Logo - Small.png" alt="Embraaace" class="logo-small" />
+       </a>
+      
+    </header>
+
+    <div class="selection-content">
+      <h1 class="selection-title">How's your day been so far?</h1>
+      <p class="selection-subtitle">
+        Take a quiet moment to check in with yourself and select the emotion that most closely matches your current headspace so we can help you make the most of your day.
+      </p>
+
+      <div class="emotions-grid">
+        <button class="emotion-btn" style="--bg:#F9E07A; --text:#1a1a1a;" data-emotion="Happy">Happy</button>
+        <button class="emotion-btn" style="--bg:#6B8FB5; --text:#1a1a1a;" data-emotion="Sad">Sad</button>
+        <button class="emotion-btn" style="--bg:#F5A623; --text:#1a1a1a;" data-emotion="Anxious">Anxious</button>
+        <button class="emotion-btn" style="--bg:#1A8C6A; --text:#ffffff;" data-emotion="Curious">Curious</button>
+
+        <button class="emotion-btn" style="--bg:#8B1DAF; --text:#ffffff;" data-emotion="Unmotivated">Unmotivated</button>
+        <button class="emotion-btn" style="--bg:#D93025; --text:#ffffff;" data-emotion="Angry">Angry</button>
+        <button class="emotion-btn" style="--bg:#9B8EC4; --text:#1a1a1a;" data-emotion="Scared">Scared</button>
+        <button class="emotion-btn" style="--bg:#E8007A; --text:#ffffff;" data-emotion="Excited">Excited</button>
+
+        <button class="emotion-btn" style="--bg:#B0B0B0; --text:#1a1a1a;" data-emotion="Empty">Empty</button>
+        <button class="emotion-btn" style="--bg:#C5D939; --text:#1a1a1a;" data-emotion="Hopeful">Hopeful</button>
+        <button class="emotion-btn" style="--bg:#3D4D9E; --text:#ffffff;" data-emotion="Doubtful">Doubtful</button>
+        <button class="emotion-btn" style="--bg:#B84A10; --text:#ffffff;" data-emotion="Frustrated">Frustrated</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MOTIVATION PAGE ===== -->
+  <div id="page-motivation" class="page">
+    <header class="top-bar">
+      <!-- Replace with your logo image -->
+      <img src="assets/EMBRACE Logo - Small.png" alt="Embraaace" class="logo-small" />
+    </header>
+ 
+    <div class="motivation-content">
+      <div class="motivation-card">
+        <div id="emotion-badge" class="emotion-badge"></div>
+        <blockquote id="quote-text" class="quote-text"></blockquote>
+        <p id="quote-author" class="quote-author"></p>
+      </div>
+      <button class="btn-back" onclick="goTo('page-selection')">← Back</button>
+    </div>
+  </div>
+
+  <script src="quotes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
